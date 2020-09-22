@@ -29,7 +29,11 @@ void loop()
 
   //if the photoresistor value is below the threshold turn the light on, otherwise turn it off
   if (photoresistor < threshold) {
+    // creates a blink pattern
     digitalWrite(13, HIGH);         // Turn on the LED
+    delay(100);
+    digitalWrite(13, LOW);         // Turn off the LED
+    delay(100);
   } else {
     digitalWrite(13, LOW);          // Turn off the LED
   }
