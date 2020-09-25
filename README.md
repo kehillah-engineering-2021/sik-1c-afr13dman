@@ -11,7 +11,7 @@ Arduino and USB drivers will need to be installed for the code to work. Go to ww
 
 To run the code click on the upload button on the top left corner (second to left) on the arduino interface.
 
-![Upload Button](images-and-videos/upload-button.png)
+![Upload Button](images-and-gifs/upload-button.png)
 
 ### The Code
 The program is designed to have the LED turn on or off based on the light the photoresistor receives. If the photoresistor receives a lot of light (ie. room is bright), it will turn the LED off. If the photoresistor does not receive any light (ie. room is dark), it will turn the LED on.
@@ -43,7 +43,7 @@ void loop()
 ```
 
 Here is what it looks like:
-![Photoresistor Basic](images-and-gifs/photoresitor-reg.gif)
+![Photoresistor Basic](images-and-gifs/photoresistor-reg.gif)
 
 ### Challenges
 1. Response Pattern: create a blink pattern that tiggers when light is below the threshold (ie. it's dark) or when a hand is waved over the sensor.
@@ -56,10 +56,10 @@ if (photoresistor < threshold) {
   delay(100);
 }
 ```
-![Photoresistor Pattern](images-and-gifs/photoresitor-blink.gif)
+![Photoresistor Pattern](images-and-gifs/photoresistor-blink.gif)
 
 2. Replace 10K resistor with an LED. The negative leg of the LED should connect to ground.
 
 ![Arduino Board](images-and-gifs/LED-board-setup.jpg)
 
-![Photoresistor Light Resistor](images-and-gifs/photoresitor-LED.gif)
+![Photoresistor Light Resistor](images-and-gifs/photoresistor-LED.gif)
