@@ -2,8 +2,10 @@
 
 ### Running the Program
 The program is compatible with an Arduino Uno board which was set up using a SparkFun Inventor's Kit. Following the instructions, the basic board set up should look like this: 
+![Arduino Board](images-and-gifs/basic-setup.jpg)
 
-![Arduino Board](images-and-videos/board-template.jpg)
+Here is the template:
+![Arduino Board](images-and-gifs/board-template.jpg)
 
 Arduino and USB drivers will need to be installed for the code to work. Go to www.arduino.cc/downloads to download Arduino and www.sparkfun.com/ch340 to download drivers. Pnce Arduino is installed you will need to select the correct board, in this case: Arduino Uno, and the correct port. Next, connect your board to the computer using an USB cable.
 
@@ -41,7 +43,7 @@ void loop()
 ```
 
 Here is what it looks like:
-![Photoresistor Basic]()
+![Photoresistor Basic](images-and-gifs/photoresitor-reg.gif)
 
 ### Challenges
 1. Response Pattern: create a blink pattern that tiggers when light is below the threshold (ie. it's dark) or when a hand is waved over the sensor.
@@ -54,7 +56,10 @@ if (photoresistor < threshold) {
   delay(100);
 }
 ```
-![Photoresistor Pattern]()
+![Photoresistor Pattern](images-and-gifs/photoresitor-blink.gif)
 
-2. Replace 10K resistor with an LED
-![Photoresistor Light Resistor]()
+2. Replace 10K resistor with an LED. The negative leg of the LED should connect to ground.
+
+![Arduino Board](images-and-gifs/LED-board-setup.jpg)
+
+![Photoresistor Light Resistor](images-and-gifs/photoresitor-LED.gif)
