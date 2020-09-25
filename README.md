@@ -43,6 +43,7 @@ void loop()
 ```
 
 Here is what it looks like:
+
 ![Photoresistor Basic](images-and-gifs/photoresistor-reg.gif)
 
 ### Challenges
