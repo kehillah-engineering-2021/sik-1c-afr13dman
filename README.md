@@ -41,8 +41,20 @@ void loop()
 ```
 
 Here is what it looks like:
-![Photoresistor]()
+![Photoresistor Basic]()
 
 ### Challenges
-1. Response Pattern
+1. Response Pattern: create a blink pattern that tiggers when light is below the threshold (ie. it's dark) or when a hand is waved over the sensor.
+```C
+if (photoresistor < threshold) {
+  // creates a blink pattern
+  digitalWrite(13, HIGH);         // Turn on the LED
+  delay(100);
+  digitalWrite(13, LOW);         // Turn off the LED
+  delay(100);
+}
+```
+![Photoresistor Pattern]()
+
 2. Replace 10K resistor with an LED
+![Photoresistor Light Resistor]()
